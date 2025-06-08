@@ -13,4 +13,4 @@ Under continuous development
 - 碰撞墙壁和蛇身检测
 - 吃到食物蛇神增长 1 格
 游戏截图
-![snake](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake.gif)
+![snake](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif)
