@@ -1,6 +1,7 @@
 <div align=left>
-<img src="https://img.shields.io/badge/godot engine-4.x-blue"/>
-<img src="https://img.shields.io/badge/GDScript-green"/>
+  <img src="https://img.shields.io/badge/godot engine-4.x-blue"/>
+  <img src="https://img.shields.io/badge/GDScript-green"/>
+  <img src="https://img.shields.io/badge/game-demo-white"/>
 </div>
 
 # 简介
