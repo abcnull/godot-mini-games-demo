@@ -1,7 +1,7 @@
 extends Node2D
 
 ## grid
-const grid_size: Vector2 = Vector2(1, 1) # grid size
+const grid_size: Vector2 = Vector2(30, 30) # grid size
 const cell_size: int     = 30 # cell size
 ## snake
 var snake_body: Array[Vector2]    = [] # snake body
