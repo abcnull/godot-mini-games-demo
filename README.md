@@ -1,8 +1,8 @@
 <div align=left>
-  <a href="https://godotengine.org/">
+  <a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/godot engine-4.x-blue"/>
   </a>
-  <a href="https://godotengine.org/">
+  <a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/GDScript-green"/>
   </a>
   <img src="https://img.shields.io/badge/game-demo-white"/>
