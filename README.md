@@ -1,3 +1,7 @@
+<div align=left>
+<img src="https://img.shields.io/badge/godot engine-4.x-blue"/>
+<img src="https://img.shields.io/badge/GDScript-green"/>
+</div>
 # 简介
 godot 制作的小游戏合集demo
 
