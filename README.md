@@ -21,6 +21,6 @@ Under continuous development
 - 方向键可操控蛇的移动
 - 按键与蛇运动方向相同会让蛇以 2 倍速度移动
 - 碰撞墙壁和蛇身检测
-- 吃到食物蛇神增长 1 格
+- 吃到食物后蛇身增长 1 格
 
 ![snake](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif)
