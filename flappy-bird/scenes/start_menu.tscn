@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc70fn07pyop4"]
+
+[ext_resource type="Script" uid="uid://cip0qg5scn6lc" path="res://scenes/start_menu.gd" id="1_ouf4f"]
+
+[node name="StartMenu" type="MarginContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = -15.5
+offset_right = 36.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 300
+script = ExtResource("1_ouf4f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+process_mode = 3
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "开始游戏"
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "音乐"

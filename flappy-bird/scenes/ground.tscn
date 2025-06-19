@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk7hxrbg750ho"]
+
+[ext_resource type="Script" uid="uid://dybtujelfwx5s" path="res://scenes/ground.gd" id="1_mi8v4"]
+[ext_resource type="Texture2D" uid="uid://dvfpw1komfbo7" path="res://assets/ground.png" id="2_mi8v4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi8v4"]
+size = Vector2(509, 111.5)
+
+[node name="Ground" type="Node2D"]
+script = ExtResource("1_mi8v4")
+
+[node name="GroundSprite" type="Sprite2D" parent="."]
+position = Vector2(1, 347)
+scale = Vector2(0.702778, 1)
+texture = ExtResource("2_mi8v4")
+
+[node name="ObstacleArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObstacleArea"]
+position = Vector2(0.5, 346.25)
+shape = SubResource("RectangleShape2D_mi8v4")

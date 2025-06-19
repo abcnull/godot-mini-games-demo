@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://l6vxy3rmqvk1"]
+
+[ext_resource type="Script" uid="uid://u3ii73eoobhr" path="res://scenes/end_screen.gd" id="1_kq7ac"]
+
+[node name="PanelContainer" type="PanelContainer"]
+custom_minimum_size = Vector2(200, 150)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -75.0
+offset_right = 100.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kq7ac")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="GameOverText" type="Label" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "游戏结束"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="CurrentScoreText" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "本轮得分: "
+horizontal_alignment = 1
+
+[node name="CurrentScore" type="Label" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HightestScoreText" type="Label" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "最高得分: "
+horizontal_alignment = 1
+
+[node name="HightestScore" type="Label" parent="VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "再来一局"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "退出"

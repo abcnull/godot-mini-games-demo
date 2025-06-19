@@ -1,0 +1,44 @@
+[gd_scene load_steps=11 format=3 uid="uid://bd1e8lfom27er"]
+
+[ext_resource type="Script" uid="uid://nyjpuokirtnq" path="res://scenes/global_var.gd" id="1_85g3d"]
+[ext_resource type="Script" uid="uid://c31p0cul4resb" path="res://scenes/signal_bus.gd" id="1_tipki"]
+[ext_resource type="PackedScene" uid="uid://7g63mwywubgi" path="res://scenes/bird.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://c4ke5wvcknkxq" path="res://scenes/background_manager.tscn" id="2_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://e0h275yefnlw" path="res://scenes/ground_manager.tscn" id="3_tefeu"]
+[ext_resource type="PackedScene" uid="uid://6sveu677rynr" path="res://scenes/obstacle_manager.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://diwbnf2o7m2e7" path="res://scenes/score_screen.tscn" id="4_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dafvv5ljjnemw" path="res://scenes/game_manager.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dc70fn07pyop4" path="res://scenes/start_menu.tscn" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://l6vxy3rmqvk1" path="res://scenes/end_screen.tscn" id="10_choun"]
+
+[node name="FlappyBird" type="Node"]
+
+[node name="GlobalVar" type="Node" parent="."]
+script = ExtResource("1_85g3d")
+
+[node name="SignalBus" type="Node" parent="."]
+script = ExtResource("1_tipki")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GameManager" parent="." instance=ExtResource("5_tbgi4")]
+
+[node name="BackgroundManager" parent="." instance=ExtResource("2_tbgi4")]
+
+[node name="ObstacleManager" parent="." instance=ExtResource("4_jyhfs")]
+
+[node name="GroundManager" parent="." instance=ExtResource("3_tefeu")]
+
+[node name="Bird" parent="." instance=ExtResource("2_0wfyh")]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="ScoreScreen" parent="HUD" instance=ExtResource("4_tbgi4")]
+
+[node name="Menus" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="StartMenu" parent="Menus" instance=ExtResource("7_o6xl0")]
+
+[node name="EndScreen" parent="Menus" instance=ExtResource("10_choun")]
+visible = false

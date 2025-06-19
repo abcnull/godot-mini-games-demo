@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb8nhd0ywenpn"]
+
+[ext_resource type="Texture2D" uid="uid://d34aidi8iihtk" path="res://assets/obstacle.png" id="1_7ukg5"]
+[ext_resource type="Script" uid="uid://xgr2o3hvyqqb" path="res://scenes/obstacle.gd" id="1_drdry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ukg5"]
+size = Vector2(66, 447)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drdry"]
+size = Vector2(67, 149)
+
+[node name="Obstacle" type="Node2D"]
+scale = Vector2(1.2, 1.2)
+script = ExtResource("1_drdry")
+
+[node name="UpPic" type="Sprite2D" parent="."]
+position = Vector2(0, -300)
+texture = ExtResource("1_7ukg5")
+
+[node name="DownPic" type="Sprite2D" parent="."]
+position = Vector2(0, 300)
+texture = ExtResource("1_7ukg5")
+
+[node name="ObstacleArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObstacleArea"]
+position = Vector2(0, -300)
+shape = SubResource("RectangleShape2D_7ukg5")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ObstacleArea"]
+position = Vector2(0, 300)
+shape = SubResource("RectangleShape2D_7ukg5")
+
+[node name="ScoreArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_drdry")
