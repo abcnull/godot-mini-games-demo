@@ -6,6 +6,21 @@
 [ext_resource type="Texture2D" uid="uid://d2p5nk6emrx4m" path="res://assets/bird3.png" id="4_jggmu"]
 [ext_resource type="Texture2D" uid="uid://bx1gomcbk7ff2" path="res://assets/bird4.png" id="5_hrcfq"]
 
+[sub_resource type="Animation" id="Animation_b7mtg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
 [sub_resource type="Animation" id="Animation_twsrt"]
 resource_name = "fly_animation"
 length = 0.57
@@ -34,21 +49,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3]
-}
-
-[sub_resource type="Animation" id="Animation_b7mtg"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bdh3x"]
