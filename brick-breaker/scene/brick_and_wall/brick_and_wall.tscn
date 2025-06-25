@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://djaq0523kpliq"]
+
+[ext_resource type="Script" uid="uid://sdxoedkyy1t" path="res://scene/brick_and_wall/brick_and_wall.gd" id="1_a7dcf"]
+
+[node name="BrickAndWall" type="Node2D"]
+script = ExtResource("1_a7dcf")

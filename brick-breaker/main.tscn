@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfoaxio4s8hip"]
+
+[ext_resource type="Script" uid="uid://o1dfgkq0b2ye" path="res://main.gd" id="1_ow8hk"]
+[ext_resource type="PackedScene" uid="uid://djaq0523kpliq" path="res://scene/brick_and_wall/brick_and_wall.tscn" id="2_0kxuu"]
+[ext_resource type="PackedScene" uid="uid://b3gy3an13n33k" path="res://scene/paddle/paddle.tscn" id="4_6wc1a"]
+[ext_resource type="PackedScene" uid="uid://0bru3wl55dr0" path="res://scene/ball/ball.tscn" id="4_wv2rl"]
+
+[node name="BrickBreaker" type="Node2D"]
+script = ExtResource("1_ow8hk")
+
+[node name="BrickAndWall" parent="." instance=ExtResource("2_0kxuu")]
+
+[node name="Ball" parent="." instance=ExtResource("4_wv2rl")]
+position = Vector2(400, 540)
+
+[node name="Paddle" parent="." instance=ExtResource("4_6wc1a")]
+position = Vector2(400, 550)
+collision_mask = 4
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = -15.5
+offset_right = 36.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "重新开始"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

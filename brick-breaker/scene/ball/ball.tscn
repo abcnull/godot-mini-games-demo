@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://0bru3wl55dr0"]
+
+[ext_resource type="Script" uid="uid://cfn8v14lfwplh" path="res://scene/ball/ball.gd" id="1_6vbd3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qgtsc"]
+radius = 5.0
+
+[node name="Ball" type="CharacterBody2D"]
+position = Vector2(388, 329)
+collision_mask = 14
+script = ExtResource("1_6vbd3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qgtsc")
