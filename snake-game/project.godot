@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="snake_game"
+config/name="snake-game"
 run/main_scene="uid://0byye4x2nk0c"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
