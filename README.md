@@ -33,4 +33,4 @@ Under continuous development
 - 碰撞检测
 - 小鸟飞得分与存储最高分
 
-![flappy bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)
+![flappy_bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)
