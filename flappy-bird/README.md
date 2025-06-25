@@ -6,4 +6,14 @@
 - 碰撞检测
 - 小鸟飞得分与存储最高分
 
-![flappy bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)
+demo锻炼：
+- GDScript 语法
+- 碰撞检测
+- 信号的用法
+- 场景树的知识
+- 界面绘制
+- 初识图片添加
+- 初识动画添加
+- 初识音乐添加
+
+![flappy_bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)

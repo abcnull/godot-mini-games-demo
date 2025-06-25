@@ -23,6 +23,11 @@ Under continuous development
 - 碰撞墙壁和蛇身检测
 - 吃到食物后蛇身增长 1 格
 
+demo锻炼：
+- GDScript 语法
+- 图形绘制
+- 逻辑思维
+
 ![snake](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif)
 
 # flappy bird 飞翔的小鸟
@@ -33,4 +38,28 @@ Under continuous development
 - 碰撞检测
 - 小鸟飞得分与存储最高分
 
+demo锻炼：
+- GDScript 语法
+- 碰撞检测
+- 信号的用法
+- 场景树的知识
+- 界面绘制
+- 初识图片添加
+- 初识动画添加
+- 初识音乐添加
+
 ![flappy_bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)
+
+# brick breaker 打砖块
+游戏介绍：复刻经典大砖块小游戏
+- 砖块，墙体，小球以及挡板
+- 小球与挡板，小球与墙体的碰撞检测
+- 小球的速度的改变与反弹
+
+demo锻炼：
+- GDScript 语法
+- 碰撞检测
+- 图形绘制
+
+![brick_breaker](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif)
+
