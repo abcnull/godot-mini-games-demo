@@ -1,4 +1,6 @@
 # snake game 贪吃蛇
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif" width="150" height="150" alt="snake_game">
+
 游戏介绍：复刻经典贪吃蛇小游戏
 - 随机食物与随机 snake 开始位置
 - 固定网格大小
@@ -12,4 +14,15 @@
 - 图形绘制
 - 逻辑思维
 
-![snake](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif)
+设计思路：
+- 1.先初始化蛇身体和食物位置
+- 2.每帧执行逻辑
+    - 2.1 每帧监听键盘动作，是要加速，还是改变蛇的方向
+    - 2.2 蛇的运动速度通过全局变量控制，到一定时间蛇头会运动，本质是绘制
+    - 2.3 判定蛇头吃到食物与否，若吃到，蛇尾部不减少，若没吃到蛇尾减少；只要当蛇触发一次绘制时候，不论蛇尾是否减少，蛇头都会新绘制一个方格
+    - 2.4 如果蛇头吃到食物，食物重新随机生成，注意不能生成到蛇身处
+    - 2.5 如果蛇头碰到边界或者蛇头碰到身体，game over
+- 3._draw 逻辑
+    - 3.1 绘制网格
+    - 3.2 绘制蛇身
+    - 3.3 绘制食物

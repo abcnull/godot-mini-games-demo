@@ -1,4 +1,6 @@
 # brick breaker 打砖块
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif" width="150" height="150" alt="brick_breaker">
+
 游戏介绍：复刻经典大砖块小游戏
 - 砖块，墙体，小球以及挡板
 - 小球与挡板，小球与墙体的碰撞检测
@@ -9,4 +11,17 @@ demo锻炼：
 - 碰撞检测
 - 图形绘制
 
-![brick_breaker](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif)
+设计思路：
+- 1.点击开始，即可开始游戏
+    - 1.1 初始化游戏数据，包括小球速度，小球于是可以运动
+- 2.通过监听键盘事件，控制滑板的左右移动
+- 3.当每帧绘制时候，判断当小球和周围物体发生碰撞时
+    - 3.1 如果小球掉落出编辑，则 game over
+    - 3.2 如果小球碰撞到墙壁，则小球反弹
+    - 3.3 小球碰撞到砖块，小球反弹，且砖块消失
+    - 3.4 小球碰撞到滑板，小球反弹（有发生碰撞那一刻滑板的速度决定反弹的角度和速度）
+- 4.小球和滑板的每帧绘制
+- 5.砖块和墙壁的绘制
+    - 4.1 通过底层方法直接永久绘制墙壁
+    - 4.2 通过底层方法直接永久绘制砖块
+- 6.游戏结束重新开始，init 游戏数据，清楚通过底层方法生成的墙壁和砖块

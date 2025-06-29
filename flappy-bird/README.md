@@ -1,4 +1,6 @@
 # flappy bird 飞翔的小鸟
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif" width="120" height="200" alt="flappy_bird">
+
 游戏介绍：复刻经典飞翔的小鸟小游戏
 - 随机管道位置
 - 固定网格大小
@@ -16,4 +18,17 @@ demo锻炼：
 - 初识动画添加
 - 初识音乐添加
 
-![flappy_bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)
+设计逻辑：
+- 1.游戏开始初始化：游戏音乐，得分系统，按钮等初始化，发送游戏开始信号
+- 2.游戏开始后，触发背景，障碍物运动
+    - 2.1 背景不断的运动，到一定时候滚动回来
+    - 2.2 障碍物不断运动，到一定时候逃出界面的障碍物销毁释放，在一定时候在新的位置生成
+    - 2.3 地板障碍物不断运动，到一定时候滚动回来
+- 3.小鸟监听键盘鼠标线上飞，否则下落
+- 4.障碍物进行碰撞检测
+    - 4.1 小鸟逃出障碍物得分，最高分需要刷记录
+    - 4.2 小鸟碰撞上树枝，game over
+    - 4.3 小鸟碰撞上地板，game over
+- 5.游戏结束
+    - 5.1 触发结束界面展示和游戏暂停（得分和最高分）
+    - 5.2 重新开始游戏
