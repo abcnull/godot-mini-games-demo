@@ -15,6 +15,7 @@ Classic mini-games demo through godot using GDscript.
 Under continuous development
 
 # snake game 贪吃蛇
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif" width="150" height="150" alt="snake_game">
 游戏介绍：复刻经典贪吃蛇小游戏
 - 随机食物与随机 snake 开始位置
 - 固定网格大小
@@ -28,10 +29,8 @@ demo锻炼：
 - 图形绘制
 - 逻辑思维
 
-<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif" width="150" height="150" alt="图片描述">
-
-
 # flappy bird 飞翔的小鸟
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif" width="120" height="200" alt="flappy_bird">
 游戏介绍：复刻经典飞翔的小鸟小游戏
 - 随机管道位置
 - 固定网格大小
@@ -49,9 +48,8 @@ demo锻炼：
 - 初识动画添加
 - 初识音乐添加
 
-<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif" width="120" height="200" alt="图片描述">
-
 # brick breaker 打砖块
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif" width="150" height="150" alt="brick_breaker">
 游戏介绍：复刻经典大砖块小游戏
 - 砖块，墙体，小球以及挡板
 - 小球与挡板，小球与墙体的碰撞检测
@@ -62,9 +60,8 @@ demo锻炼：
 - 碰撞检测
 - 图形绘制
 
-<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif" width="150" height="150" alt="图片描述">
-
 # minesweeper 扫雷
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/minesweeper.gif" width="250" height="150" alt="minesweeper">
 游戏介绍：复刻经典扫雷小游戏
 - 扫雷方格底层隐藏的可能是地雷，区域空，或者 1-8 的数字。区域空表示周围一圈没地雷，1-8 表示周围一圈地雷的个数
 - 扫雷方格如果是没有被翻开的，可以被用户左键点击，表示翻牌，右键点击表示设置红旗，红旗标记表示此处有地雷
