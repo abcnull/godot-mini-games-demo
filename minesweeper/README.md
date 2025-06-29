@@ -1,5 +1,6 @@
 # minesweeper 扫雷
 <img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/minesweeper.gif" width="250" height="150" alt="minesweeper">
+
 游戏介绍：复刻经典扫雷小游戏
 - 扫雷方格底层隐藏的可能是地雷，区域空，或者 1-8 的数字。区域空表示周围一圈没地雷，1-8 表示周围一圈地雷的个数
 - 扫雷方格如果是没有被翻开的，可以被用户左键点击，表示翻牌，右键点击表示设置红旗，红旗标记表示此处有地雷
