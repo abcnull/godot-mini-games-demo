@@ -28,7 +28,8 @@ demo锻炼：
 - 图形绘制
 - 逻辑思维
 
-![snake](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif)
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/snake_game.gif" width="150" height="150" alt="图片描述">
+
 
 # flappy bird 飞翔的小鸟
 游戏介绍：复刻经典飞翔的小鸟小游戏
@@ -48,7 +49,7 @@ demo锻炼：
 - 初识动画添加
 - 初识音乐添加
 
-![flappy_bird](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif)
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/flappy_bird.gif" width="120" height="200" alt="图片描述">
 
 # brick breaker 打砖块
 游戏介绍：复刻经典大砖块小游戏
@@ -61,7 +62,7 @@ demo锻炼：
 - 碰撞检测
 - 图形绘制
 
-![brick_breaker](https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif)
+<img src="https://github.com/abcnull/Image-Resources/blob/master/godot-mini-games-demo/brick_breaker.gif" width="150" height="150" alt="图片描述">
 
 # minesweeper 扫雷
 游戏介绍：复刻经典扫雷小游戏
