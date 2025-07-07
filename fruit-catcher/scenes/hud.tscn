@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg7axtoqfulsl"]
+
+[ext_resource type="Script" uid="uid://c0ln15bugvv78" path="res://scripts/hud.gd" id="1_vwgbt"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_vwgbt")
+
+[node name="TopPanelBorder" type="ColorRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_right = 576.0
+offset_bottom = 72.0
+grow_horizontal = 2
+color = Color(1, 1, 0, 1)
+
+[node name="TopPanel" type="ColorRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_right = 576.0
+offset_bottom = 70.0
+grow_horizontal = 2
+color = Color(0.284014, 0.40522, 0.797299, 1)
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 50.0
+offset_right = 250.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 0.647059, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "得分: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -30.0
+offset_right = 97.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "开始游戏"
+
+[node name="HealthLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -452.0
+offset_right = -252.0
+offset_bottom = 70.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.430322, 0.945119, 0.675696, 1)
+theme_override_font_sizes/font_size = 40
+text = "生命值: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 877.0
+offset_top = 15.0
+offset_right = 1077.0
+offset_bottom = 55.0
+value = 100.0
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

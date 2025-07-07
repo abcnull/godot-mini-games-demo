@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://f4tpnruhbxnb"]
+
+[ext_resource type="Script" uid="uid://hul5nbqkin0j" path="res://scripts/basket.gd" id="1_02mcs"]
+[ext_resource type="Texture2D" uid="uid://dq2f4y7hwbnnv" path="res://images/wicker-basket.png" id="2_ob0rp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0f8ux"]
+radius = 5.0
+height = 92.0
+
+[node name="Basket" type="Area2D"]
+script = ExtResource("1_02mcs")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_ob0rp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0f8ux")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

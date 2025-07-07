@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://dj2md7sqj21ol"]
+
+[ext_resource type="Script" uid="uid://dgtrueybfm32i" path="res://scripts/main.gd" id="1_few5d"]
+[ext_resource type="PackedScene" uid="uid://51kjuqqd5v10" path="res://scenes/fruit.tscn" id="2_g87yv"]
+[ext_resource type="PackedScene" uid="uid://f4tpnruhbxnb" path="res://scenes/basket.tscn" id="3_4f6l2"]
+[ext_resource type="PackedScene" uid="uid://cg7axtoqfulsl" path="res://scenes/hud.tscn" id="4_6x2cs"]
+[ext_resource type="PackedScene" uid="uid://cfr5pk1w5vrds" path="res://scenes/pause_menu.tscn" id="5_gqqoh"]
+[ext_resource type="PackedScene" uid="uid://b6mowywh26r6e" path="res://scenes/game_over_menu.tscn" id="6_tw7sy"]
+
+[node name="FuritCatcher" type="Node"]
+script = ExtResource("1_few5d")
+fruit_scene = ExtResource("2_g87yv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.270968, 0.60888, 0.501076, 1)
+
+[node name="Basket" parent="." instance=ExtResource("3_4f6l2")]
+position = Vector2(563, 574)
+
+[node name="HUD" parent="." instance=ExtResource("4_6x2cs")]
+process_mode = 2
+
+[node name="PauseMenu" parent="." instance=ExtResource("5_gqqoh")]
+process_mode = 2
+visible = false
+
+[node name="GameOverMenu" parent="." instance=ExtResource("6_tw7sy")]
+process_mode = 2
+visible = false
+
+[node name="FruitTimer" type="Timer" parent="."]
+
+[connection signal="hit" from="Basket" to="." method="fruit_caught"]
+[connection signal="start_game" from="HUD" to="." method="_on_hud_start_game"]
+[connection signal="exit" from="PauseMenu" to="." method="_on_menu_exit"]
+[connection signal="resume" from="PauseMenu" to="." method="_on_pause_menu_resume"]
+[connection signal="exit" from="GameOverMenu" to="." method="_on_menu_exit"]
+[connection signal="restart" from="GameOverMenu" to="." method="_on_game_over_menu_restart"]
+[connection signal="timeout" from="FruitTimer" to="." method="_on_fruit_timer_timeout"]
