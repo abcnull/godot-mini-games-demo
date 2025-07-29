@@ -29,6 +29,10 @@ extends TileMap
 #			3.4.2.2 创建新的方块在游戏中，设定位置和颜色还有方块种类
 #			3.4.2.3 创建下一个方块在 panel 中
 #			3.4.2.4 判断游戏结束，即创建的方块有没有和 board 重合
+#	4.TileMap 绘制的几个重要的函数
+#		4.1 在指定图层，设置 srouce_id 以及图集 set_cell(active_layer, pos + unit_pos, TILE_ID, atlas)
+#		4.2 在指定图层，清除 source_id 以及图集 erase_cell(active_layer, cur_pos + unit_pos)
+#		4.3 获取指定图层的 source_id，如果为空则返回 -1 get_cell_source_id(board_layer, pos)
 
 # tetrominoes
 # 对应 "I"
